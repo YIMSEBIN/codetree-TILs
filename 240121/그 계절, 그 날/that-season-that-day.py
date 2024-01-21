@@ -31,7 +31,7 @@ def func(y, m, d) :
             return -1
         else :
             return "Summer"
-    elif m == 7 and m == 8 :
+    elif m == 7 or m == 8 :
         if d > 31 :
             return -1
         else :
