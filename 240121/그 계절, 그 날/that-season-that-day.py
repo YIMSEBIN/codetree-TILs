@@ -3,14 +3,14 @@ def func(y, m, d) :
         if d > 31 :
             return -1
         else :
-            return "Spring"
+            return "Winter"
     elif m == 2 :
         if d == 29 and ((y%100 == 0 and y%400 != 0) or (y%4 != 0)) :
             return -1
         if d > 29 :
             return -1
         else :
-            return "Spring"
+            return "Winter"
     elif m == 3 :
         if d > 31 :
             return -1
@@ -20,12 +20,12 @@ def func(y, m, d) :
         if d > 30 :
             return -1
         else :
-            return "Summer"
+            return "Spring"
     elif m == 5 :
         if d > 31 :
             return -1
         else :
-            return "Summer"
+            return "Spring"
     elif m == 6 :
         if d > 30 :
             return -1
@@ -40,22 +40,22 @@ def func(y, m, d) :
         if d > 30 :
             return -1
         else :
-            return "Summer"
+            return "Fall"
     elif m == 10 :
         if d > 31 :
             return -1
         else :
-            return "Summer"
+            return "Fall"
     elif m == 11 :
         if d > 30 :
             return -1
         else :
-            return "Summer"
+            return "Fall"
     elif m == 12 :
         if d > 31 :
             return -1
         else :
-            return "Summer"
+            return "Winter"
 
 
 y, m, d = map(int, input().split())
