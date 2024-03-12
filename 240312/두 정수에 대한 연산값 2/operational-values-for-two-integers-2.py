@@ -1,13 +1,13 @@
 def foo(a, b) :
-    small, big = 0, 0
+    ra, rb = 0, 0
     if a > b :
-        small = b
-        big = a
+        ra = a*2
+        rb = b+10
     else :
-        small = a
-        big = b
+        ra = a+10
+        rb = b*2
     
-    return small+10, big*2
+    return ra, rb
 
 a, b = map(int, input().split())
 ra, rb = foo(a, b)
