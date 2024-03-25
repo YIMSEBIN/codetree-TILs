@@ -3,4 +3,4 @@ nums = list(map(int, input().split()))
 
 nums.sort()
 
-print(nums[n-1]+nums[n-2])
+print(nums[2*n-1]+nums[2*n-2])
