@@ -6,6 +6,6 @@ class Bomb :
 
 code, color, second = map(str, input().split())
 bomb = Bomb(code, color, int(second))
-print("code : %s\n" % code)
-print("color : %s\n" % color)
-print("second : %d\n" % second)
+print("code : %s" % bomb.code)
+print("color : %s" % bomb.color)
+print("second : %d" % bomb.second)
