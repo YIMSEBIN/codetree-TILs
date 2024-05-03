@@ -12,12 +12,13 @@ def heapify(a, l) :
         nums[cur_max_index], nums[a] = nums[a], nums[cur_max_index]
         heapify(cur_max_index, l)
 
-def heap_sort(l) :
-    for i in range(l, -1, -1) :
-        heapify(i, l)
-    nums[0], nums[l] = nums[l], nums[0]
-    if l > 0 :
-        heap_sort(l-1)
+def heap_sort() :
+    for i in range(n, -1, -1) :
+        heapify(i, n-1)
+    
+    for i in range(n-1, 0, -1) :
+        nums[0], nums[i] = nums[i], nums[0]
+        heapify(0, i-1)
 
-heap_sort(n-1)
+heap_sort()
 print(*nums)
